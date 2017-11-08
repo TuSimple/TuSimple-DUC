@@ -1,0 +1,3 @@
+[submodule "mxnet"]
+	path = mxnet
+	url = git@github.com:TuSimple/mxnet.git
