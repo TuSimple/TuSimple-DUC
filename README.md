@@ -12,19 +12,19 @@ We tested our code on:
 
 Ubuntu 16.04, Python 2.7 with
 
-MXNet (0.11.0), numpy(1.13.1), cv2(3.2.0) and PIL(4.2.1)
+[MXNet (0.11.0)](https://github.com/TuSimple/mxnet), numpy(1.13.1), cv2(3.2.0), PIL(4.2.1), and cython(0.25.2)
 
 ## Usage
 
 1. Clone the repository:
 
    ```shell
-   git clone git@github.com:TuSimple/TuSimple-DUC.git
+   git clone
    ```
 
 2. Download the pretrained model from [Google Drive](https://drive.google.com/open?id=0B72xLTlRb0SoREhISlhibFZTRmM).
 
-3. Build MXNet:
+3. Build MXNet (only tested on the TuSimple version):
 
    ```shell
    git clone --recursive git@github.com:TuSimple/mxnet.git
@@ -61,7 +61,7 @@ MXNet (0.11.0), numpy(1.13.1), cv2(3.2.0) and PIL(4.2.1)
    (single scale testing denotes as 'ss' and multiple scale testing denotes as 'ms')
 
    - ResNet101-DUC-HDC on CityScapes testset (mIoU): 79.1(ss) / 80.1(ms)
-   - PSPNet152-DUC on VOC2012 (mIoU): 83.1(ss)
+   - ResNet152-DUC on VOC2012 (mIoU): 83.1(ss)
 
 ## Citation
 
@@ -76,4 +76,4 @@ If you find the repository is useful for your research, please consider citing:
 
 ## Questions
 
-Please contact 'panqu.wang@tusimple.ai' or 'pengfei.chen@tusimple.ai'
+Please contact panqu.wang@tusimple.ai or pengfei.chen@tusimple.ai .
