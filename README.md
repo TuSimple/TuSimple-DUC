@@ -19,7 +19,8 @@ Ubuntu 16.04, Python 2.7 with
 1. Clone the repository:
 
    ```shell
-   git clone
+   git clone git@github.com:TuSimple/TuSimple-DUC.git
+   python setup.py develop --user
    ```
 
 2. Download the pretrained model from [Google Drive](https://drive.google.com/open?id=0B72xLTlRb0SoREhISlhibFZTRmM).
@@ -43,7 +44,7 @@ Ubuntu 16.04, Python 2.7 with
    python train_model.py ../configs/train/train_cityscapes.cfg
    ```
 
-   The paths/dirs in the ``.cfg`` file needs to be specified by the user.
+   The paths/dirs in the ``.cfg`` file need to be specified by the user.
 
 4. Testing
 
@@ -52,7 +53,7 @@ Ubuntu 16.04, Python 2.7 with
    python predict_full_image.py ../configs/test/test_full_image.cfg
    ```
 
-   The paths/dirs in the ``.cfg`` file needs to be specified by the user.
+   The paths/dirs in the ``.cfg`` file need to be specified by the user.
 
 5. Results:
 
