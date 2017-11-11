@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 import mxnet as mx
-from resnet import get_resnet_hdc
+from .resnet import get_resnet_hdc
 
 
 def get_symbol_duc_hdc(label_num=19, ignore_label=255, bn_use_global_stats=True,

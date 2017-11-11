@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Queue
 import atexit
 import logging
@@ -7,7 +8,7 @@ import random
 import mxnet as mx
 import numpy as np
 
-import utils
+from . import utils
 
 
 class CityLoader(mx.io.DataIter):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math
 import os
 
@@ -6,7 +7,7 @@ import mxnet as mx
 import numpy as np
 from PIL import Image
 
-from predictor import Predictor
+from .predictor import Predictor
 
 from tusimple_duc.core import utils
 from tusimple_duc.core import cityscapes_labels

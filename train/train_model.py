@@ -1,4 +1,5 @@
-from solver import Solver
+from __future__ import absolute_import
+from .solver import Solver
 import ConfigParser
 import sys
 

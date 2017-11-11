@@ -1,3 +1,4 @@
+from __future__ import print_function
 import ConfigParser
 import os
 import sys
@@ -84,13 +85,13 @@ class ImageListTester:
             idx += 1
             start_time = time.time()
             conf_lst.append(self.predict_single(item))
-            print 'Process %d out of %d image ... %s, time cost:%.3f, confidence:%.3f' % \
-                  (idx, len(img_list), item.strip().split('/')[-1], time.time() - start_time, conf_lst[-1][0])
+            print('Process %d out of %d image ... %s, time cost:%.3f, confidence:%.3f' % \
+                  (idx, len(img_list), item.strip().split('/')[-1], time.time() - start_time, conf_lst[-1][0]))
         conf_file = open(os.path.join(self.result_dir, self.model_prefix + str(self.model_epoch) + '.txt'), 'w')
         conf_lst.sort()
         for item in conf_lst:
 
-            print >> conf_file, "{}\t{}".format(item[1], item[0])
+            print("{}\t{}".format(item[1], item[0]), file=conf_file)
 
 
 if __name__ == '__main__':

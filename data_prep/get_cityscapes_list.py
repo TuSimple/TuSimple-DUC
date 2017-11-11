@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import glob
 
@@ -15,15 +16,15 @@ def get_cityscapes_list_augmented(root, image_path, label_path, lst_path, is_fin
         if os.path.isfile(l):
             index += 1
             if index % 100 == 0:
-                print "%d out of %d done." % (index, len(all_images))
+                print("%d out of %d done." % (index, len(all_images)))
             if index % sample_rate != 2:
                 continue
             for i in range(1, 8):
                 train_lst.append([str(index), p, l, "512", str(256 * i)])
         else:
-            print "dismiss %s" % (p)
+            print("dismiss %s" % (p))
 
     train_out = open(lst_path, "w")
     for line in train_lst:
-        print >> train_out, '\t'.join(line)
-        print >> train_out, '\t'.join(line)
+        print('\t'.join(line), file=train_out)
+        print('\t'.join(line), file=train_out)
