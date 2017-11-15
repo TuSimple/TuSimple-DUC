@@ -29,7 +29,7 @@ Ubuntu 16.04, Python 2.7 with
 
    ```shell
    git clone --recursive git@github.com:TuSimple/mxnet.git
-   vim make/config.mk
+   vim make/config.mk (we should have USE_CUDA = 1, modify USE_CUDA_PATH, and have USE_CUDNN = 1 to enable GPU usage.)
    make -j
    cd python
    python setup.py develop --user
