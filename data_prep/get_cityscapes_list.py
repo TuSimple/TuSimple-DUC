@@ -16,7 +16,7 @@ def get_cityscapes_list_augmented(root, image_path, label_path, lst_path, is_fin
             index += 1
             if index % 100 == 0:
                 print "%d out of %d done." % (index, len(all_images))
-            if index % sample_rate != 2:
+            if index % sample_rate != 0:
                 continue
             for i in range(1, 8):
                 train_lst.append([str(index), p, l, "512", str(256 * i)])
@@ -25,5 +25,4 @@ def get_cityscapes_list_augmented(root, image_path, label_path, lst_path, is_fin
 
     train_out = open(lst_path, "w")
     for line in train_lst:
-        print >> train_out, '\t'.join(line)
         print >> train_out, '\t'.join(line)

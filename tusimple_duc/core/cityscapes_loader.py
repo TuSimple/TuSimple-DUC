@@ -80,8 +80,8 @@ class CityLoader(mx.io.DataIter):
         for item in iter(data_queue.get, stop_word):
             if stop_flag == 1:
                 break
-            index, image, label = CityLoader._get_single(item, input_args)
-            result_queue.put((index, image, label))
+            image, label = CityLoader._get_single(item, input_args)
+            result_queue.put((image, label))
             count += 1
 
     @property
