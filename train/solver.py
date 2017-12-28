@@ -109,7 +109,7 @@ class Solver(object):
             'random_bound'          : self.random_bound,
         }
         val_args = train_args.copy()
-        val_args['scale_factors'] = 1
+        val_args['scale_factors'] = [1]
         val_args['use_random_crop'] = False
         val_args['use_mirror'] = False
         train_dataloader = loader(self.train_list, train_args)
