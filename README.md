@@ -4,7 +4,7 @@ by Panqu Wang, Pengfei Chen, Ye Yuan, Ding Liu, Zehua Huang, Xiaodi Hou, and Gar
 
 ## Introduction
 
-This repository is for [Understanding Convolution for Semantic Segmentation](https://arxiv.org/abs/1702.08502), which achieved state-of-the-art result on the CityScapes, PASCAL VOC 2012, and Kitti Road benchmark.
+This repository is for [Understanding Convolution for Semantic Segmentation](https://arxiv.org/abs/1702.08502) (WACV 2018), which achieved state-of-the-art result on the CityScapes, PASCAL VOC 2012, and Kitti Road benchmark.
 
 ## Requirement
 
