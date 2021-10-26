@@ -23,7 +23,7 @@ Ubuntu 16.04, Python 2.7 with
    python setup.py develop --user
    ```
 
-2. Download the pretrained model from [Google Drive](https://drive.google.com/open?id=0B72xLTlRb0SoREhISlhibFZTRmM).
+2. Download the pretrained model from [Google Drive](https://drive.google.com/drive/folders/0B72xLTlRb0SoREhISlhibFZTRmM?resourcekey=0-g2Fr58Nn591bs5ZvZ0Vlwg&usp=sharing).
 
 3. Build MXNet (only tested on the TuSimple version):
 
